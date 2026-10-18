@@ -39,4 +39,3 @@ Land geometry: Natural Earth 1:110m land, public domain, sourced from https://gi
 TypeScript and ESLint passed. Boundary checks passed for one-hour duration, 50/51 characters, joined emoji and combining marks. The production bundle compiled successfully, but full build completion and the browser preview were blocked by the session's Windows child-process restriction (`spawn EPERM`). The updated map has since been checked in a desktop and mobile-size browser; see DESIGN.md. Run the commands above in a normal local terminal to complete that check. Dependencies were installed without lifecycle scripts because of the same restriction; npm reported zero known vulnerabilities at installation time.
 
 
-
