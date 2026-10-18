@@ -1,8 +1,14 @@
 # Hear Me Out
 
+**[Explore the live demo](https://hear-me-out-inky.vercel.app/)**
+
 Hear Me Out is a cozy, interactive globe where people can share fleeting feelings, discover live radio and public cameras, and feel connected to moments happening around the world. The current prototype combines a globe-first social experience with optional accounts, city-level privacy, saved places, live weather and local time, radio, and public camera streams.
 
-## Run
+## Built with
+
+Next.js, React, TypeScript, MapLibre GL, Supabase and HLS.js.
+
+## Run locally
 
 From this folder:
 
@@ -34,8 +40,6 @@ Copy `.env.example` to `.env.local` and add the Supabase public values. `YOUTUBE
 
 Land geometry: Natural Earth 1:110m land, public domain, sourced from https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson. Weather: https://open-meteo.com/ . Only selected city centers are sent to the weather provider.
 
-## Verification in the Codex session
+## Demo status
 
-TypeScript and ESLint passed. Boundary checks passed for one-hour duration, 50/51 characters, joined emoji and combining marks. The production bundle compiled successfully, but full build completion and the browser preview were blocked by the session's Windows child-process restriction (`spawn EPERM`). The updated map has since been checked in a desktop and mobile-size browser; see DESIGN.md. Run the commands above in a normal local terminal to complete that check. Dependencies were installed without lifecycle scripts because of the same restriction; npm reported zero known vulnerabilities at installation time.
-
-
+This is an experimental personal project. The live demo includes sample feelings; it is not a fully moderated public social platform. Availability of external radio stations and livestreams can vary.
